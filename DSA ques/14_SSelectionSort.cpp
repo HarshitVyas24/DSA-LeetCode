@@ -21,7 +21,7 @@ void selectionSort(int arr[] , int n){
                 minIdx = j;
 
             }
-            swap(arr[i], stt[minIdx]);
+            swap(arr[i],arr[minIdx]);
         }
     }
     printArr(arr, n);
