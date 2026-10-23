@@ -6,19 +6,17 @@ int secondLargest(int arr[] , int n ){
     int largest = INT_MIN;
     int secLarge = INT_MIN;
 
-    for(int i= 0 ; i<n ; i++){
+    for(int i= 0 ; i<n; i++){
+
         if(arr[i] > largest){
+            secLarge= largest;
             largest = arr[i];
         }
-    }
 
-    for(int i = 0 ; i<n; i++){
-
-        if(arr[i] != largest && arr[i] > secLarge){
+        else if(arr[i] < largest && arr[i] > secLarge){
             secLarge = arr[i];
         }
     }
-
     return secLarge;
 
 }
