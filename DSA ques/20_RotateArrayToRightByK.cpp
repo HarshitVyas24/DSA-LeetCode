@@ -6,4 +6,4 @@ public:
         reverse(nums.begin() + n-k , nums.end());
         reverse(nums.begin() , nums.end());
     }
-};
+}
